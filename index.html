@@ -336,7 +336,8 @@
             
             return await adapter.requestDevice({
                 requiredLimits: requiredLimits,
-                requiredFeatures: ["shader-f16"]
+                requiredFeatures: ["shader-f16"],
+                powerPreference: "high-performance"
             });
         };
 
